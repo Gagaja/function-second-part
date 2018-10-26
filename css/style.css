@@ -1,0 +1,235 @@
+*{
+    box-sizing: border-box;
+}
+
+h3 {
+    text-align: center;
+    font-size: 30px;
+    color: #015226;
+    font-weight: 500;
+}
+
+
+
+
+
+.btn{
+    border: 1px solid #015226;
+    padding: 5px 10px;
+    margin-bottom: 10px;
+    border-radius: 10px;
+    color: #015226;
+    transition: 1s,1s;
+}
+
+.btn:hover{
+    background: #9cff7e;
+    color: #015226;
+}
+
+.main-title{
+    text-align: center;
+    font-size: 45px;
+    color: #015226;
+    font-weight: bold;
+    letter-spacing: 1.5px;
+}
+
+
+
+
+/***** ZADATAK OSAM ****/
+
+.zadatak8 {
+    width: 100%;
+    min-height: 250px;
+    background: #87ebcd;
+    text-align: center;
+    padding: 25px 0;
+    border-bottom: 1px solid #5e5e5e;
+    
+}
+
+.zadatak8 >.section{
+    width: 300px;
+    min-height: 100px;
+    margin: auto;
+     padding-top:15px ;
+     border: 2px dashed #015226;
+     padding-bottom: 10px;
+
+}
+#zadatak8 input{
+    border: 1px solid #015226;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    color: #015226;
+    padding: 7px;
+    width: 200px;
+}
+#zadatak8 label{
+    font-size: 20px;
+    color: #015226;
+    font-weight: 500;
+}
+#zadatak8 .btn{
+    margin-top: 15px;
+   
+}
+
+/***** ZADATAK DEVET ****/
+
+.zadatak9{
+    width: 100%;
+    min-height: 250px;
+    background: #87b6eb;
+    text-align: center;
+    padding: 10px 0;
+    border-bottom: 1px solid #5e5e5e;
+    
+}
+.zadatak9 >.section{
+    width: 300px;
+    min-height: 100px;
+    margin: auto;
+     padding-top:15px ;
+     border: 2px dashed #015226;
+     padding-bottom: 10px;
+
+}
+#zadatak9 input{
+    border: 1px solid #015226;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    color: #015226;
+    padding: 7px;
+    width: 200px;
+}
+#zadatak9 label{
+    font-size: 20px;
+    color: #015226;
+    font-weight: 500;
+}
+#rodjendan-btn{
+    margin-top: 15px;
+    
+}
+
+/***** ZADATAK DESET ****/
+
+.zadatak10{
+    width: 100%;
+    min-height: 250px;
+    background: #eb8787;
+    text-align: center;
+    padding: 10px 0;
+    border-bottom: 1px solid #5e5e5e;
+    
+}
+.zadatak10 >.section{
+    width: 300px;
+    min-height: 100px;
+    margin: auto;
+     padding-top:15px ;
+     border: 2px dashed #015226;
+     padding-bottom: 10px;
+
+}
+#zadatak10 input{
+    border: 1px solid #015226;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    color: #015226;
+    padding: 7px;
+    width: 200px;
+}
+#zadatak10 label{
+    font-size: 20px;
+    color: #015226;
+    font-weight: 500;
+}
+#zadatak10 .btn{
+    margin-top: 15px;
+    
+}
+
+/***** ZADATAK JEDANAEST ****/
+
+.zadatak11 {
+    width: 100%;
+    min-height: 250px;
+    background: #ebc087;
+    text-align: center;
+    padding: 10px 0;
+    border-bottom: 1px solid #5e5e5e;
+    
+}
+.zadatak11 >.section{
+    width: 300px;
+    min-height: 100px;
+    margin: auto;
+     padding-top:15px ;
+     border: 2px dashed #015226;
+     padding-bottom: 10px;
+
+}
+#zadatak11 input{
+    border: 1px solid #015226;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    color: #015226;
+    padding: 7px;
+    width: 200px;
+}
+#zadatak11 label{
+    font-size: 20px;
+    color: #015226;
+    font-weight: 500;
+}
+#zadatak11 .btn{
+    margin-top: 15px;
+   
+}
+
+/***** ZADATAK DVANAEST ****/
+.zadatak14 {
+    width: 100%;
+    min-height: 250px;
+    background: #87eba0;
+    text-align: center;
+    padding: 10px 0;
+    border-bottom: 1px solid #5e5e5e;
+    
+}
+.zadatak14 >.section{
+    width: 300px;
+    min-height: 100px;
+    margin: auto;
+     padding-top:15px ;
+     border: 2px dashed #015226;
+     padding-bottom: 10px;
+
+}
+#zadatak14 input{
+    border: 1px solid #015226;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    color: #015226;
+    padding: 7px;
+    width: 200px;
+}
+#zadatak14 label{
+    font-size: 20px;
+    color: #015226;
+    font-weight: 500;
+}
+#zadatak14 .btn{
+    margin-top: 15px;
+  
+}
+

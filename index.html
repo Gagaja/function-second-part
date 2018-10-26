@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="./bootstrap/bootstrap.min.css">
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+
+<body>
+    <div class="page-content">
+        <h1 class="main-title">Funkcije domaći 2. deo</h1>
+        <div class="zadatak8">
+
+            <div class="section">
+                <div id="zadatak8">
+                    <label for="koliko-god">Koje ste godine rođeni?</label>
+                    <br>
+                    <input type="text" id="koliko-god">
+                    <input type="button" value="Izračunaj godinu rođenja" id="godina-btn" class="btn">
+                    <p id="izracunaj-god"></p>
+                </div>
+            </div>
+        </div>
+        <div class="zadatak9">
+            <h3>Dana na planeti Zemlji</h3>
+            <div class="section">
+                    <div id="zadatak9">
+                            <label for="god-rodjenja">Koje godine ste rodjeni?</label><br>
+                            <input type="text" id="god-rodjenja" placeholder="2000"><br>
+                            <label for="mesec-rodjenja">U kom mesecu ste rodjeni?</label><br>
+                            <input type="text" id="mesec-rodjenja" placeholder="01"><br>
+                            <label for="dan-rodjenja">Kog dana ste rodjeni?</label><br>
+                            <input type="text" id="dan-rodjenja" placeholder="01"><br><br>
+                            <input type="button" value="Izracunaj" id="rodjendan-btn" class="btn">
+                            <p id="rodjendan"></p>
+                        </div>
+            </div>
+        </div>
+        <div class="zadatak10">
+            <h3>Pretvori kb u mb</h3>
+            <div class="section">
+                    <div id="zadatak10">
+                            <label for="kilobajti">Upiši Kilobajte</label><br>
+                            <input type="text" id="kilobajti">
+                            <input type="button" value="Izracunaj u MB" id="mb-btn" class="btn">
+                            <p id="mega-bajt"></p>
+                        </div>
+            </div>
+        </div>
+        <div class="zadatak11">
+            <h3>Stepenovanje brojeva </h3>
+            <div class="section">
+                    <div id="zadatak11">
+                            <label for="broj">Broj</label><br>
+                            <input type="text" id="broj"><br>
+                            <label for="stepen">Na koji stepen</label><br>
+                            <input type="text" id="stepen"><br><br>
+                            <input type="button" value="Izracunaj" id="stepen-btn" class="btn">
+                            <p id="izracunaj-stepen"></p>
+                        </div>
+            </div>
+        </div>
+        <div class="zadatak14">
+            <h3>Množenje</h3>
+            <div class="section">
+                    <div id="zadatak14">
+                            <label for="broj-mnozenje">Broj</label><br>
+                            <input type="text" id="broj-mnozenje"><br>
+                            <label for="pomnozi">Pomnozi sa</label><br>
+                            <input type="text" id="pomnozi"><br><br>
+                            <input type="button" value="Izracunaj" id="mnozenje-btn" class="btn">
+                            <p id="proizvod"></p>
+                        </div>
+            </div>
+        </div>
+       
+
+    </div>
+
+    <footer></footer>
+
+    <script>
+
+         document.getElementById("godina-btn").addEventListener('click', function () {
+            var godina = document.getElementById("koliko-god").value;
+            var godinaRodjenja = 2018 - godina;
+            document.getElementById("izracunaj-god").innerHTML = 'Vi ste rodjeni ' + godinaRodjenja + ' godine.';
+            document.getElementById("izracunaj-god").style.color = "#015226";
+        });
+        document.getElementById("rodjendan-btn").addEventListener('click', function () {
+            var year = document.getElementById("god-rodjenja").value;
+            var month = document.getElementById("mesec-rodjenja").value;
+            var day = document.getElementById("dan-rodjenja").value;
+            var date1 = new Date();
+            var date1_ms = date1.getTime();
+            var birthday = new Date(year, (month - 1), day);
+            var birthday_ms = birthday.getTime();
+            var dani = Math.floor((date1_ms - birthday_ms) / 1000 / 60 / 60 / 24);
+            document.getElementById("rodjendan").innerHTML = 'Na planeti Zemlji ste ' + dani + ' dana.';
+            document.getElementById("rodjendan").style.color = "#015226";
+        });
+        document.getElementById("mb-btn").addEventListener('click', function () {
+            var kilobajti = document.getElementById("kilobajti").value;
+            var megabajti = kilobajti / 1024;
+            if (megabajti <= 1) {
+                document.getElementById("mega-bajt").innerHTML = megabajti + ' megabajt';
+            } else {
+                document.getElementById("mega-bajt").innerHTML = megabajti + ' megabajta';
+            }
+            document.getElementById("mega-bajt").style.color = "#015226";
+        });
+        document.getElementById("stepen-btn").addEventListener('click', function () {
+            var rezultat = 1;
+            var a = document.getElementById("broj").value;
+            var b = document.getElementById("stepen").value;
+            for (i = 0; i < b; i++) {
+                rezultat *= a;
+            }
+            document.getElementById("izracunaj-stepen").innerHTML = rezultat;
+            document.getElementById("izracunaj-stepen").style.color = "#015226";
+        });
+        document.getElementById("mnozenje-btn").addEventListener('click', function () {
+            var rezultat = 0;
+            var a = document.getElementById("broj-mnozenje").value;
+            var b = document.getElementById("pomnozi").value;
+            for (i = 0; i < b; i++) {
+                rezultat += +a;
+            }
+            document.getElementById("proizvod").innerHTML = rezultat;
+            document.getElementById("proizvod").style.color = "#015226";
+        });
+    </script>
+
+
+</body>
+
+
+</html>
